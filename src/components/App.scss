@@ -1,0 +1,36 @@
+div.items {
+    display: flex;
+    flex-wrap: wrap;
+
+    div.item {
+        display: flex;
+        flex-wrap: nowrap;
+        align-items: center;
+
+        max-width: 100px;
+        min-height: 100px;
+
+        padding: 10px;
+
+        border: 1px solid #313131;
+
+        span {
+            white-space: pre;
+        }
+
+        input {
+            width: 100%;
+
+            border: 0;
+            outline: 0;
+        }
+
+        &.wrong input {
+            color: red;
+        }
+
+        &.right input {
+            color: green;
+        }
+    }
+}
